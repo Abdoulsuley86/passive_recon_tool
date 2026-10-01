@@ -1,58 +1,97 @@
 Passive Recon Tool
 
-A lightweight command-line tool for performing passive reconnaissance and collecting publicly available information about authorized domains.
+A simple Python-based passive reconnaissance tool for gathering basic publicly available information about a domain.
 
-Features
+What It Does
+
+The tool provides several reconnaissance functions, including:
 
 - IP address information
-- DNS information
 - WHOIS information
-- Passive reconnaissance
-- Simple command-line interface
+- DNS information
+- Website information
+- A full passive scan combining the available checks
+
+The tool is intended for authorized security testing, learning, and reconnaissance of systems you own or have permission to assess.
 
 Requirements
 
-- Linux/macOS or a compatible terminal environment
-- Bash
-- Internet connection
-- Any dependencies required by the reconnaissance modules
+Before using the tool, make sure you have:
+
+- Python 3
+- An active internet connection
+- Linux/Kali Linux or another compatible environment
 
 Installation
 
 Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/passive-recon-tool.git
-cd passive-recon-tool
+git clone https://github.com/Abdoulsuleiman86/passive_recon_tool.git
 
-Make the tool executable if necessary:
+Enter the project directory:
 
-chmod +x passive_recon_tool
+cd passive_recon_tool
 
-Usage
+Running the Tool
 
-Start the tool:
+Start the program with:
 
-./passive_recon_tool
+python3 main.py
 
-Select an option from the menu and provide a domain that you own or are explicitly authorized to assess.
+You should then see the available options in the menu.
 
-Example:
+Choose an option and enter the domain you are authorized to test.
 
-Target domain: example.com
+Example
 
-Responsible Use
+Choose an option:
+1. IP Information
+2. WHOIS Information
+3. DNS Information
+4. Web Information
+5. Full Passive Scan
+6. Exit
 
-This tool is intended for educational purposes, security research, and authorized reconnaissance.
+For a safe initial test, you can use:
 
-Only use it against domains, systems, or infrastructure that you own or have explicit permission to assess.
+example.com
 
-Do not use this tool for unauthorized reconnaissance, password attacks, login bypasses, or interference with systems belonging to other people or organizations.
+Important
 
-Contributing
+Only use this tool against domains and systems that you own or have explicit permission to test.
 
-Contributions, bug reports, and improvements are welcome.
+Do not use it to access, attack, or interfere with systems without authorization.
+
+Troubleshooting
+
+The tool cannot retrieve information
+
+Make sure your computer has an active internet connection.
+
+You can test your connection with:
+
+ping -c 3 google.com
+
+If the connection works but individual reconnaissance functions time out, the external service being queried may be unavailable or blocking the request.
+
+Python is not found
+
+Check whether Python 3 is installed:
+
+python3 --version
+
+If Python 3 is installed, run the program with:
+
+python3 main.py
+
+Project Structure
+
+passive_recon_tool/
+├── main.py
+├── README.md
+└── .gitignore
 
 License
 
-This project is provided under the terms of the license included in this repository.
+No license has been specified for this project yet.
 
