@@ -1,6 +1,32 @@
+# Python cache
 __pycache__/
-*.pyc
-*.log
-*_full_report.txt
-*_report.txt
+*.py[cod]
+*.pyo
 
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Backups
+*.backup
+*.bak
+*.old
+*.before_*
+*.backup_*
+backup*/
+*.zip
+
+# Generated reconnaissance reports
+reports/
+report.txt
+pull_report.txt
+
+# Local secrets and environment settings
+.env
+.env.*
+!.env.example
